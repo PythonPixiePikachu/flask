@@ -6,7 +6,7 @@ import tempfile
 app = Flask(__name__)
 
 # Load YOLO model once at startup
-MODEL_PATH = r"C:\Users\User\Desktop\projects\varshitha\flask\yolov11_leafsnap.pt"
+MODEL_PATH = "yolov11_leafsnap.pt"
 model = YOLO(MODEL_PATH)
 
 @app.route('/predict', methods=['POST'])
